@@ -1,0 +1,2 @@
+# rpcsample
+Golang rpc sample
