@@ -11,7 +11,10 @@ func main() {
 		log.Fatal(err)
 	}
 	var reply string
-	err = cli.Call("Foo.Hello", "Lyric", &reply)
+	md := map[string]string{
+		"Foo": "bar",
+	}
+	err = cli.Call("Foo.HelloMap", md, &reply)
 	if err != nil {
 		log.Fatal(err)
 	}

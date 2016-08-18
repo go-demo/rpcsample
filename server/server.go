@@ -36,3 +36,8 @@ func (f *Foo) Hello(name string, reply *string) error {
 	*reply = fmt.Sprintf("Hello,%s!", name)
 	return nil
 }
+
+func (f *Foo) HelloMap(m map[string]string, reply *string) error {
+	*reply = fmt.Sprintf("%#v", m)
+	return nil
+}
